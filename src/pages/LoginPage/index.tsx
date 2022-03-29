@@ -4,11 +4,13 @@
 import { Form, Input, Space, Button } from 'antd'
 import { UserOutlined, EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons'
 import { useNavigate } from 'react-router-dom'
+import { getDataInfo } from '../../services/Axios'
 import './index.scss'
 export default () => {
   const navigate = useNavigate()
   const handleLoginClick = () => {
     console.log('999')
+    getDataInfo('/login', { credential: 111 })
     navigate('/home')
     console.log(history)
   }

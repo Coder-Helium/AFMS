@@ -25,11 +25,9 @@ export default () => {
         key="tags"
         render={(tags) => (
           <>
-            {tags.map((tag: any) => (
-              <Tag color="blue" key={tag}>
-                {tag}
-              </Tag>
-            ))}
+            <Tag color="blue" key={tags}>
+              {tags}
+            </Tag>
           </>
         )}
       />

@@ -22,7 +22,7 @@ export default (params:{url:string, body?:any}) => {
     okText="是"
     cancelText="否"
   >
-    <a href="#">Delete</a>
+    <a href="#">删除</a>
   </Popconfirm>
   )
 }

@@ -30,16 +30,12 @@ export default () => {
           title="Tags"
           dataIndex="tags"
           key="tags"
-          render={tags => (
-            <>
-              {tags.map((tag:any) => (
-                <Tag color="blue" key={tag}>
-                  {tag}
-                </Tag>
-              ))}
-            </>
+          render={(tags) => (
+            <Tag color="blue" key={tags}>
+              {tags}
+            </Tag>
           )}
-        />
+      />
         <Column
           title="Action"
           key="action"
