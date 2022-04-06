@@ -1,5 +1,28 @@
 .testContainer {
-    background-color: aqua;
-    width: 5000px;
-    height: 500px;
+    background-color:rgba($color: #e4e4e4, $alpha: 1.0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.upContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.upItemContainer {
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    width: 30%;
+    height: 90%;
+}
+.downContainer {
+    background-color: white;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 10px;
+    height: 50%;
 }

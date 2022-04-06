@@ -13,7 +13,7 @@ const deleteParams = {
   data: {}
 };
 const checkParams = {
-  itemId: 2
+  id: 2
 };
 const optionsParams = {
   itemId: 1,

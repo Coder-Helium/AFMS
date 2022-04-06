@@ -12,16 +12,25 @@
     width: 100%;
     height: 50%;
 }
-.upItemContainer {
+.chartContainer  {
     background-color: white;
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
     margin: 20px;
     border-radius: 10px;
-    width: 30%;
+    width: 35%;
     height: 90%;
+}
+.insertContainer {
+    background-color: white;
+    margin: 20px;
+    padding-top: 50px;
+    border-radius: 10px;
+    width: 60%;
+    height: 90%;
+}
+.taskChartLabel {
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 20px;
 }
 .downContainer {
     background-color: white;

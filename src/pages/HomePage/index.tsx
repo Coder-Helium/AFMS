@@ -50,7 +50,7 @@ export default () => {
             <div className = 'homeCardBox' onClick = {handelProcessClick} >
                 <div className = 'front'>
                     <NodeExpandOutlined twoToneColor = "#eb2f96" style = {{ fontSize: '70px' }}/>
-                    <span>养殖流程管理</span>
+                    <span>养殖管理</span>
                 </div>
                 <div className = 'back'>
                     <p>养殖流程</p>

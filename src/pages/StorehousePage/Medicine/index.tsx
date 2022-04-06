@@ -9,7 +9,7 @@ import Delete from '../../../components/DeleteComponent';
 import Options from '../../../components/OptionComponent';
 
 const checkParams = {
-  itemId: 2
+  id: 2
 };
 const deleteParams = {
   url: 'hmx',

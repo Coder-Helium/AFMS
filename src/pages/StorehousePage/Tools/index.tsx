@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react/display-name */
 /* eslint-disable no-unused-vars */
-import { Table, Tag, Space } from 'antd';
+import { Table, Tag, Space, Radio } from 'antd';
 import { useEffect, useState } from 'react';
 import { getDataInfo } from '../../../services/Axios';
 import Delete from '../../../components/DeleteComponent';
@@ -18,7 +18,7 @@ export default () => {
     data: {}
   };
   const checkParams = {
-    itemId: 2
+    id: 2
   }
   const { Column, ColumnGroup } = Table;
   return (

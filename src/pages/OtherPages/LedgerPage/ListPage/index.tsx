@@ -3,10 +3,10 @@
 /* eslint-disable no-unused-vars */
 import { Table, Tag, Space, Button } from 'antd';
 import React, { useEffect, useState } from 'react';
-import { getDataInfo } from '../../../services/Axios';
-import Delete from '../../../components/DeleteComponent';
-import Check from '../../../components/StoreCheck';
-import Options from '../../../components/OptionComponent';
+import { getDataInfo } from '../../../../services/Axios';
+import Delete from '../../../../components/DeleteComponent';
+import Check from '../../../../components/StoreCheck';
+import Options from '../../../../components/OptionComponent';
 // Todo: 以下参数为临时数据，注意后续视情况修改
 const deleteParams = {
   url: 'hmx',

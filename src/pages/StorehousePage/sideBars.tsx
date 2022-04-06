@@ -32,6 +32,13 @@ export const sideBar = {
       url: './medicine',
       path: '/medicine',
       element: <MedicinePage/>
+    },
+    {
+      index: '5',
+      name: '其他消耗品',
+      url: './consumable',
+      path: '/consumable',
+      element: <MedicinePage/>
     }
   ]
 }

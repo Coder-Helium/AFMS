@@ -1,9 +1,9 @@
 /* eslint-disable react/display-name */
 /* eslint-disable react/react-in-jsx-scope */
 import './index.scss'
-import ListPage from './ListPage';
-import ChartPage from './ChartPage';
-import StatisticPage from './StatisticPage';
+import TaskList from './TaskList';
+import TaskInsert from './TaskInsert';
+import TaskChart from './TaskChart';
 export default (props:any) => {
   const msg = props;
   console.log(msg)
@@ -11,17 +11,18 @@ export default (props:any) => {
     <div className='testContainer'>
 
       <div className='upContainer'>
-        <div className='upItemContainer'>
-          <ChartPage />
+        <div className='chartContainer'>
+          <label className='taskChartLabel'>任务类型分布</label>
+          <TaskChart />
         </div>
-        <div className='upItemContainer'>
-          <StatisticPage />
+        <div className='insertContainer'>
+          <TaskInsert />
         </div>
-        <div className='upItemContainer'></div>
       </div>
       <div className='downContainer'>
-        <ListPage />
+        <TaskList />
       </div>
+        <label>{msg.value}</label>
     </div>
   )
 }

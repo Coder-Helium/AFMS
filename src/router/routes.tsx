@@ -5,7 +5,7 @@ import HomePage from '../pages/HomePage'
 import ProcessPage from '../pages/ProcessPage'
 import StorehousePage from '../pages/StorehousePage'
 import PersonnelPage from '../pages/PersonnelPage'
-import Others from '../pages/OtherPages/OtherPageIndex'
+import Others from '../pages/OtherPages'
 import LedgerPage from '../pages/OtherPages/LedgerPage'
 import LogePage from '../pages/OtherPages/LogPage'
 import TestPage from '../pages/TestPage'
@@ -20,7 +20,29 @@ export const routes = [
   },
   {
     path: '/process',
-    component: ProcessPage
+    component: <ProcessPage />,
+    routes: [
+      {
+        path: '/process/task/management',
+        component: <TestPage/>
+      },
+      {
+        path: '/process/plan/insert',
+        component: <TestPage/>
+      },
+      {
+        path: '/process/plan/release',
+        component: <TestPage/>
+      },
+      {
+        path: '/process/task/log',
+        component: <TestPage/>
+      },
+      {
+        path: '/process/pool/management',
+        component: <TestPage/>
+      }
+    ]
   },
   {
     path: '/personnel',
@@ -68,10 +90,10 @@ export const routes = [
   },
   {
     path: '/others',
-    component: Others,
+    component: <Others />,
     routes: [
       {
-        path: '/others/ledger',
+        path: '/others/fund',
         component: LedgerPage
       },
       {
